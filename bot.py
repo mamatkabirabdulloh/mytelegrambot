@@ -18,6 +18,7 @@ dp = Dispatcher(bot, storage=storage)
 port = int(os.environ.get("PORT", 5000))
 
 
+
 # Har bir foydalanuvchining savatchasi
 user_carts = {}
 
@@ -146,7 +147,8 @@ async def get_location(message: types.Message, state: FSMContext):
 if __name__ == '__main__':
     from aiogram import executor
     executor.start_polling(dp, skip_updates=True)
-    app.run(host="0.0.0.0", port=port)
+    
+app.run(host="0.0.0.0", port=port)
 
 
 
