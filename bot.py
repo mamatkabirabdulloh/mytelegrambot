@@ -10,7 +10,7 @@ import logging
 
 
 
-API_TOKEN = '7655066217:AAEfTiTjQM9yqkvCoX1ezXQXEHiS1N02YrA'  # Bot tokeningni bu yerga qo‘y
+API_TOKEN = '8055312415:AAFXSSsIYkv2kZUbIdlb8SSfQFvxU4u6Mnk'  # Bot tokeningni bu yerga qo‘y
 ADMIN_ID = 447627974  # Bu yerga admin Telegram ID yozing
 
 logging.basicConfig(level=logging.INFO)
