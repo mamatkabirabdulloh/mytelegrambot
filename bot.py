@@ -5,9 +5,7 @@ from aiogram.contrib.fsm_storage.memory import MemoryStorage
 from aiogram.dispatcher import FSMContext
 from aiogram.dispatcher.filters.state import State, StatesGroup
 import logging
-///////////
-import os
-////////////
+
 
 API_TOKEN = '7655066217:AAEfTiTjQM9yqkvCoX1ezXQXEHiS1N02YrA'  # Bot tokeningni bu yerga qo‘y
 ADMIN_ID = 447627974  # Bu yerga admin Telegram ID yozing
@@ -17,9 +15,7 @@ logging.basicConfig(level=logging.INFO)
 bot = Bot(token=API_TOKEN)
 storage = MemoryStorage()
 dp = Dispatcher(bot, storage=storage)
-/////////////////////
-port = int(os.environ.get("PORT", 5000))
-//////////////////
+
 
 
 
@@ -150,14 +146,8 @@ async def get_location(message: types.Message, state: FSMContext):
 
 if __name__ == '__main__':
     from aiogram import executor
-    ///////////////////
-    async def main():
-    await bot.delete_webhook(drop_pending_updates=True)
-    await dp.start_polling(bot)
-    ///////////////////////
     executor.start_polling(dp, skip_updates=True)
     
-app.run(host="0.0.0.0", port=port)
 
 
 
